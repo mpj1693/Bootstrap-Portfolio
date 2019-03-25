@@ -42,43 +42,36 @@
 
     <div class="row mt-4">
       <div class="col-12">
-        <form class="needs-validation" novalidate>
-          <div class="form-row">
-            <div class="col-12 mb-3">
-              <label for="validationTooltip01">Name:</label>
-              <input type="text" class="form-control" id="validationTooltip01" placeholder="Enter your name here"
-                required>
-            </div>
-          </div>
-        </form>
+        <div class="Contact">
 
-      </div>
-    </div>
+          <form id="contact-info">
 
-    <div class="row mt-4">
-      <div class="col-12">
-        <label for="validationTooltipUsername">Email:</label>
-        <div class="input-group">
-          <input type="text" class="form-control" id="validationTooltipUsername" placeholder="Enter your email here"
-            aria-describedby="validationTooltipUsernamePrepend" required>
-          <!-- <div class="invalid-tooltip">
-              Please choose a unique and valid username.
-            </div> -->
+            <ul>
+
+              <li>
+                <label class="col-12" for="name">Name:</label>
+                <input class="col-12" type="text" id="name" name="name" placeholder="John Smith" required="required">
+              </li>
+              <li style="margin-top: 15px;">
+                <label class="col-12 mt-3px" for="email">Email:</label>
+                <input class="col-12" type="email" id="email" name="email" placeholder="johnsmith@example.com" required="required">
+              </li>
+              <li style="margin-top: 15px;">
+                <label class="col-12" for="message">Message:</label>
+                <textarea class="col-12" id="messge" name="message" required="required" placeholder="Enter message here"></textarea>
+              </li>
+
+            </ul>
+
+          </form>
+
         </div>
       </div>
     </div>
 
-    <div class="row mt-4">
-      <div class="col-12">
-        <form class="needs-validation" novalidate>
-          <div class="form-row mb-3">
-            <label for="validationTextarea">Message:</label>
-            <textarea class="form-control" id="validationTextarea" placeholder="Enter your message here:"
-              required></textarea>
-          </div>
-        </form>
-      </div>
-    </div>
+   
+
+    <button type="button" class="btn btn-secondary btn-lg mt-3 ml-4">Submit</button>
 
   </div>
 
