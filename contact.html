@@ -1,56 +1,91 @@
-<!doctype html>
-<html lang="en-us">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
-  <title>Contact | Your Name</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Portfolio - Manav Patel</title>
 </head>
 
 <body>
 
-  <header id="masthead">
-    <div class="container">
-      <a href="index.html" id="logo">Your Name</a>
-      <nav>
-        <a href="index.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
-      </nav>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top fixed-top">
+
+    <div class="container" style="width: 960px">
+
+      <a class="navbar-brand h1" href="index.html">Manav Patel</a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto">
+          <a class="nav-item nav-link" href="index.html">About<span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="portfolio.html">Portfolio</a>
+          <a class="nav-item nav-link active" href="contact.html">Contact<span class="sr-only">(current)</span></a>
+        </div>
+      </div>
+
     </div>
-  </header>
 
-  <div id="main-container" class="container">
-    <section class="main-section">
-      <h1>Contact</h1>
+  </nav>
 
-      <form id="contact-form">
-        <ul>
-          <li>
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="John Smith" required="required">
-          </li>
-          <li>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
-          </li>
-          <li>
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required="required"></textarea>
-          </li>
-        </ul>
-        <input type="submit">
-      </form>
+  <div class="container mt-4" style="width: 960px">
+    <div class="row col-12">
+      <h2>Contact</h2>
+    </div>
 
-    </section>
+    <div class="row mt-4">
+      <div class="col-12">
+        <form class="needs-validation" novalidate>
+          <div class="form-row">
+            <div class="col-12 mb-3">
+              <label for="validationTooltip01">Name:</label>
+              <input type="text" class="form-control" id="validationTooltip01" placeholder="Enter your name here"
+                required>
+            </div>
+          </div>
+        </form>
+
+      </div>
+    </div>
+
+    <div class="row mt-4">
+      <div class="col-12">
+        <label for="validationTooltipUsername">Email:</label>
+        <div class="input-group">
+          <input type="text" class="form-control" id="validationTooltipUsername" placeholder="Enter your email here"
+            aria-describedby="validationTooltipUsernamePrepend" required>
+          <!-- <div class="invalid-tooltip">
+              Please choose a unique and valid username.
+            </div> -->
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-4">
+      <div class="col-12">
+        <form class="needs-validation" novalidate>
+          <div class="form-row mb-3">
+            <label for="validationTextarea">Message:</label>
+            <textarea class="form-control" id="validationTextarea" placeholder="Enter your message here:"
+              required></textarea>
+          </div>
+        </form>
+      </div>
+    </div>
 
   </div>
 
-  <footer>
-    <div class="container">
-      Copyright &copy; 
-    </div>
-  </footer>
+  <span class="d-xl-block p-3 bg-dark text-white text-center fixed-bottom">
+    Copyright &copy;
+  </span>
+
 </body>
 
 </html>
